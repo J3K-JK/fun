@@ -1,10 +1,15 @@
+// ==UserScript==
+// @name         ファンダフルショー予約0603
+// @namespace    http://tampermonkey.net/
+// @version      1.5
+// @description  ショー予約自動化
+// @author       You
+// @match        https://fanclub-funderful.tokyodisneyresort.jp/event/*
+// @grant        none
+// ==/UserScript==
+
 (function () {
   'use strict';
-
-  if (!location.href.startsWith("https://fanclub-funderful.tokyodisneyresort.jp/event/")) {
-    alert("このスクリプトはファンダフルのイベントページでのみ動作します。");
-    return;
-  }
 
   let selectedPerformance = "第1回公演";
   let ticketCount = 1;
